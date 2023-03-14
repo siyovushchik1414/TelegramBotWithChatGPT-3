@@ -24,7 +24,7 @@ from telegram.ext import (
 QUESTION_STATE,
 ) = range(2)
 
-TELEGRAM_BOT_TOKEN = "6276884911:AAF_Z-peN03cbIrRs-dj9n0fkNJemg7aQv0"
+TELEGRAM_BOT_TOKEN = "YOUR TELEGRAM API FROM FATHERBOT"
 
 def _generate_copilot(prompt: str):
     """Gets answer from copilot"""
@@ -90,7 +90,7 @@ async def pre_query_answer_handler(update: Update, context: ContextTypes):
 if __name__ == '__main__':
     load_dotenv()
 
-    application = Application.builder().token("6276884911:AAF_Z-peN03cbIrRs-dj9n0fkNJemg7aQv0").read_timeout(600).get_updates_read_timeout(600).build()
+    application = Application.builder().token("YOUR TELEGRAM API FROM FATHERBOT").read_timeout(600).get_updates_read_timeout(600).build()
 
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler('start', start)],
