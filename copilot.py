@@ -17,7 +17,7 @@ class Copilot:
         
         load_dotenv()
 
-        openai.api_key = "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"
+        openai.api_key = "PASTE YOUR OPEN AI API"
         response = openai.Completion.create(
             engine="text-davinci-003",
             prompt=prompt,
